@@ -54,7 +54,7 @@ const keyboard = [
   47,
   '↑',
   'shift-r',
-  '',
+  ':)',
   'ctr-l',
   'win',
   'alt-l',
@@ -170,7 +170,9 @@ document.querySelectorAll('#keyboard .key').forEach(function(element){
         } else if (code == '←'){
             showInTextarea('←');
         } else if (code == 'enter'){
-        newStringInTextarea(document.getElementById('textarea'),'\n');
+          newStringInTextarea(document.getElementById('textarea'),'\n');
+        } else if (code == ':)'){
+          showInTextarea(':)');
         } else {
             showInTextarea('');
         }
