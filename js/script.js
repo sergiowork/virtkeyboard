@@ -177,3 +177,36 @@ document.querySelectorAll('#keyboard .key').forEach(function(element){
     }
 });
 
+document.addEventListener('keydown', function(event){
+  document.querySelectorAll('#keyboard .key').forEach(function(element){
+     element.classList.remove('active');
+  });
+
+  if (event.keyCode == 9){
+    document.querySelector('#keyboard .key[data="'+ 'tab' +'"]').classList.add('active');
+  } else if (event.keyCode == 8){
+    document.querySelector('#keyboard .key[data="'+ 'backsp' +'"]').classList.add('active');
+  }  else if (event.keyCode == 16){
+    document.querySelector('#keyboard .key[data="'+ 'shift-r' +'"]').classList.add('active');
+  } else if (event.keyCode == 17){
+    document.querySelector('#keyboard .key[data="'+ 'ctr-r' +'"]').classList.add('active');
+  } else if (event.keyCode == 18){
+    document.querySelector('#keyboard .key[data="'+ 'alt-r' +'"]').classList.add('active');
+  } else if (event.keyCode == 20){
+    document.querySelector('#keyboard .key[data="'+ 'caps' +'"]').classList.add('active');
+  } else if (event.keyCode == 37 ){
+    document.querySelector('#keyboard .key[data="'+ '←' +'"]').classList.add('active');
+  } else if (event.keyCode == 38 ){
+    document.querySelector('#keyboard .key[data="'+ '↑' +'"]').classList.add('active');
+  } else if (event.keyCode == 39 ){
+    document.querySelector('#keyboard .key[data="'+ '→' +'"]').classList.add('active');
+  } else if (event.keyCode == 40 ){
+    document.querySelector('#keyboard .key[data="'+ '↓' +'"]').classList.add('active');
+  } else if (event.keyCode == 91 ){
+    document.querySelector('#keyboard .key[data="'+ 'win' +'"]').classList.add('active');
+  } else if (event.keyCode == 13 ){
+    document.querySelector('#keyboard .key[data="'+ 'enter' +'"]').classList.add('active');
+  } else if (event.keyCode == 32 ){
+    document.querySelector('#keyboard .key[data="'+ 'space' +'"]').classList.add('active');
+  }
+});
