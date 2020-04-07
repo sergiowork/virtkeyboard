@@ -133,3 +133,36 @@ document.onkeypress = function(event){
     }
     }
 
+//mouse
+document.querySelectorAll('#keyboard .key').forEach(function(element){
+    element.onclick = function(event){
+        document.querySelectorAll('#keyboard .key').forEach(function(element){
+        element.classList.remove('active');
+        });
+
+        let code = this.getAttribute('data');
+        this.classList.add('active');
+        console.log(code);
+        
+        if(parseInt(code)) {
+            showInTextarea(String.fromCharCode(code));
+        } else if (code == 'space'){
+            showInTextarea(' ');
+        } else if (code == 'backsp'){
+            showInTextarea(deleteSymbolInTextarea());
+        } else if (code == '↑'){
+            showInTextarea('↑');
+        } else if (code == '↓'){
+            showInTextarea('↓');
+        } else if (code == '→'){
+            showInTextarea('→');
+        } else if (code == '←'){
+            showInTextarea('←');
+        } else if (code == 'enter'){
+        newStringInTextarea(document.getElementById('textarea'),'\n');
+        } else {
+            showInTextarea('');
+        }
+    }
+});
+
