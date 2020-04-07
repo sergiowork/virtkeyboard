@@ -61,9 +61,9 @@ const keyboard = [
   'space',
   'alt-r',
   'ctr-r',
-  '→',
+  '←',
   '↓',
-  '←'
+  '→'
 ];
 
 document.write("<div class=info>");
