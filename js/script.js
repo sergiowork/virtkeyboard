@@ -43,7 +43,6 @@ const keyboard = [
 'enter',
 'shift-l',
   122,
-
   120,
   99,
   118,
@@ -56,11 +55,12 @@ const keyboard = [
   '↑',
   'shift-r',
   '',
-  'ctr',
+  'ctr-l',
   'win',
   'alt-l',
   'space',
   'alt-r',
+  'ctr-r',
   '→',
   '↓',
   '←'
