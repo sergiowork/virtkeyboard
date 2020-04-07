@@ -1,4 +1,3 @@
 # virtkeyboard
-virtkeyboard
 
-https://sergiowork.github.io/virtkboard/
+https://sergiowork.github.io/virtkeyboard/
