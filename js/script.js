@@ -66,7 +66,18 @@ const keyboard = [
   '←'
 ];
 
+document.write("<div class=info>");
+document.write("<h1>Virtual Keyboard</h1>");
+document.write("<h3>Клавиатура для Windows.</h3>");
+document.write("<\/div>");
 
+var textareaElement = document.createElement('div');
+textareaElement.innerHTML = '<textarea id="textarea"></textarea>';
+document.body.appendChild(textareaElement);
+
+var keyboardElement = document.createElement('div');
+keyboardElement.innerHTML = '<div id="keyboard"></div>';
+document.body.appendChild(keyboardElement);
 
 function init(){
     let out = '';
