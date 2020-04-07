@@ -186,12 +186,15 @@ document.addEventListener('keydown', function(event){
     document.querySelector('#keyboard .key[data="'+ 'tab' +'"]').classList.add('active');
   } else if (event.keyCode == 8){
     document.querySelector('#keyboard .key[data="'+ 'backsp' +'"]').classList.add('active');
-  }  else if (event.keyCode == 16){
-    document.querySelector('#keyboard .key[data="'+ 'shift-r' +'"]').classList.add('active');
+  } else if (event.keyCode == 16){
+    if (event.location == 1) document.querySelector('#keyboard .key[data="'+ 'shift-l' +'"]').classList.add('active');
+    if (event.location == 2) document.querySelector('#keyboard .key[data="'+ 'shift-r' +'"]').classList.add('active');
   } else if (event.keyCode == 17){
-    document.querySelector('#keyboard .key[data="'+ 'ctr-r' +'"]').classList.add('active');
+    if (event.location == 1) document.querySelector('#keyboard .key[data="'+ 'ctr-l' +'"]').classList.add('active');
+    if (event.location == 2) document.querySelector('#keyboard .key[data="'+ 'ctr-r' +'"]').classList.add('active');
   } else if (event.keyCode == 18){
-    document.querySelector('#keyboard .key[data="'+ 'alt-r' +'"]').classList.add('active');
+    if (event.location == 1) document.querySelector('#keyboard .key[data="'+ 'alt-l' +'"]').classList.add('active');
+    if (event.location == 2) document.querySelector('#keyboard .key[data="'+ 'alt-r' +'"]').classList.add('active');
   } else if (event.keyCode == 20){
     document.querySelector('#keyboard .key[data="'+ 'caps' +'"]').classList.add('active');
   } else if (event.keyCode == 37 ){
