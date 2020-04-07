@@ -91,3 +91,15 @@ function init(){
     document.getElementById('textarea').value = '';
 }
 init();
+
+
+document.onkeypress = function(event){
+    console.log(event.code); 
+    console.log(event.keyCode);
+
+    document.querySelectorAll('#keyboard .key').forEach(function(element){
+        element.classList.remove('active');
+    });
+    document.querySelector('#keyboard .key[data="'+ event.keyCode +'"]').classList.add('active');
+}
+
