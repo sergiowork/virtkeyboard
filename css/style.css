@@ -30,6 +30,7 @@ textarea{
     margin:3px; 
     padding:3px;
     float:left;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
 .newLineKey{
