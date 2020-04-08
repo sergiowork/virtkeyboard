@@ -30,7 +30,6 @@ textarea{
     margin:3px; 
     padding:3px;
     float:left;
-    transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
 .newLineKey{
@@ -39,4 +38,8 @@ textarea{
 
 .active{
     background:yellow;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+    border:1px solid yellow;
+    background: #fc0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
